@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<title>Color Scheme Generator</title>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper-container">
+			<div class="header" id="header">
+				<input type="color" name="color" id="color-input" class="color-input">
+				<select name="color-scheme" id="color-scheme" class="color-scheme">
+					<option value="monochrome">Monochrome</option>
+					<option value="monochrome-dark" class="scheme-option" id="scheme-option">Monochrome Dark</option>
+					<option value="monochrome-light" class="scheme-option" id="scheme-option">Monochrome Light</option>
+					<option value="analogic" class="scheme-option" id="scheme-option">Analogic</option>
+					<option value="complement" class="scheme-option" id="scheme-option">Complement</option>
+					<option value="analogic-complement" class="scheme-option" id="scheme-option">Analogic Complement</option>
+					<option value="triad" class="scheme-option" id="scheme-option">Triad</option>
+					<option value="quad" class="scheme-option" id="scheme-option">Quad</option>
+				</select>
+				<button class="get-scheme" id="get-scheme">Get scheme</button>
+			</div>
+			<div class="color-bars" id="color-bars">
+				<image class="bar" id="bar">
+				<image class="bar" id="bar">
+				<image class="bar" id="bar">
+				<image class="bar" id="bar">
+				<image class="bar" id="bar">
+			</div>
+			<div class="footer" id="footer">
+				<div class="rgb-box">
+					<span class="rgb-value-1" id="rgb-value-1"></span>
+				</div>
+				<div class="rgb-box">
+					<span class="rgb-value-2" id="rgb-value-2"></span>
+				</div>
+				<div class="rgb-box">
+					<span class="rgb-value-3" id="rgb-value-3"></span>
+				</div>
+				<div class="rgb-box">
+					<span class="rgb-value-4" id="rgb-value-4"></span>
+				</div>
+				<div class="rgb-box">
+					<span class="rgb-value-5" id="rgb-value-5"></span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
